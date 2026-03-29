@@ -233,7 +233,7 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-### Step 3: Install backend dependencies
+### Step 3: Start the backend server
 
 #### For Mac :
 
@@ -263,7 +263,7 @@ cd frontend
 npm install
 ```
 
-### Step 3: Install frontend dependencies
+### Step 3: Start the frontend development server
 
 ```bash
 npm run dev
