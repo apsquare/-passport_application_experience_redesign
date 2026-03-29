@@ -185,16 +185,85 @@ Follow the steps below to run the application locally after downloading the proj
 
 ---
 
-## 1. Extract and Open Project
+## Project Setup Guide
 
-Unzip the downloaded file and open the project folder.
+Follow the steps below to run the backend after downloading the project.
 
 ---
 
-## 2. Open Terminal / Command Prompt
+### 1. Extract the Project
 
-### On macOS
+- Unzip the downloaded project folder.
+
+---
+
+### 2. Open in Code Editor
+
+- Open the project folder in **VS Code** or any other code editor.
+
+---
+
+### 3. Open Terminal
+
+- Open the integrated terminal inside the editor.
+
+## Backend Setup
+
+### Step 1: Navigate to Backend Folder
 
 ```bash
-cd path/to/project
+cd backend
+```
+
+### Step 2: Create virtual environment
+
+#### For Mac :
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+#### For Windows :
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Step 3: Install backend dependencies
+
+#### For Mac :
+
+```bash
+export FLASK_APP=app.py
+flask run
+```
+
+#### For Windows :
+
+```bash
+cd backend
+set FLASK_APP=app.py
+flask run
+```
+
+## Frontend Setup
+
+### Step 1: Navigate to Frontend Folder
+
+```bash
+cd frontend
+```
+
+### Step 2: Install frontend dependencies
+
+```bash
+npm install
+```
+
+### Step 3: Install frontend dependencies
+
+```bash
+npm run dev
 ```
