@@ -151,7 +151,7 @@ Each step ensures focused data entry and reduces user overwhelm.
 ## Future Enhancements :-
 
 - Integration with official passport APIs
-  -The application can be deployed on the web to enable seamless access and full-scale implementation.
+- The application can be deployed on the web to enable seamless access and full-scale implementation.
 - Real-time appointment availability updates
 - Notification system (email/SMS)
 - Document verification using AI
