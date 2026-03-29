@@ -156,7 +156,6 @@ Each step ensures focused data entry and reduces user overwhelm.
 - Notification system (email/SMS)
 - Document verification using AI
 - Payment gateway integration
-- Application status tracking
 
 ---
 
