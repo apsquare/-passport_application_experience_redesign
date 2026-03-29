@@ -245,7 +245,6 @@ flask run
 #### For Windows :
 
 ```bash
-cd backend
 set FLASK_APP=app.py
 flask run
 ```
