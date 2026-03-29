@@ -1,0 +1,293 @@
+.page {
+  min-height: 100vh;
+  padding: 40px 20px 60px;
+  background: linear-gradient(135deg, #0f1a24 0%, #1b2733 50%, #243444 100%);
+  color: white;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.heroCard {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+.left,
+.right,
+.sectionCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.left {
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.title {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.1;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 18px;
+  max-width: 640px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.buttonRow {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.primaryButton,
+.secondaryButton {
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primaryButton {
+  background: linear-gradient(90deg, #6ea8ff, #8ef6d1);
+  color: #0f1a24;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(110, 168, 255, 0.24);
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.right {
+  padding: 24px;
+  display: flex;
+  align-items: stretch;
+}
+
+.progressCard {
+  width: 100%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progressLabel {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.progressNumber {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  margin-bottom: 8px;
+}
+
+.progressText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.sectionCard {
+  position: relative;
+  padding: 28px;
+  overflow: hidden;
+}
+
+.sectionCard::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #6ea8ff, #8ef6d1);
+  opacity: 0.75;
+}
+
+.sectionTitle {
+  margin: 0 0 22px;
+  font-size: 28px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.stepsList,
+.notesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stepItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.stepBadge {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.stepItem p {
+  margin: 4px 0 0;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.noteItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.noteDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 8px;
+  background: linear-gradient(90deg, #6ea8ff, #8ef6d1);
+  flex-shrink: 0;
+}
+
+.noteItem p {
+  margin: 0;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.tipBox {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tipBox h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #8ef6d1;
+}
+
+.tipBox p {
+  margin: 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 960px) {
+  .heroCard,
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 24px 14px 40px;
+  }
+
+  .left,
+  .right,
+  .sectionCard {
+    border-radius: 18px;
+  }
+
+  .left {
+    padding: 28px 22px;
+  }
+
+  .right {
+    padding: 18px;
+  }
+
+  .sectionCard {
+    padding: 22px 18px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .buttonRow {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    text-align: center;
+  }
+}

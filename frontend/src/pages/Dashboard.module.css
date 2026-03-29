@@ -1,0 +1,403 @@
+.dashboardPage {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0f1a24 0%, #1b2733 50%, #243444 100%);
+  color: white;
+}
+
+.dashboardContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-family: "Fraunces", serif;
+}
+
+.subheading {
+  font-size: 1.1rem;
+  color: #d6d6d6;
+  margin-top: 6px;
+}
+
+.cardGrid {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: start;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #6ea8ff, #8ef6d1);
+  opacity: 0.7;
+}
+
+.cardLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardLeft h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+
+.cardLeft p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #cbd6e2;
+}
+
+.infoRow {
+  display: flex;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.infoLabel {
+  color: #8fa3bf;
+}
+
+.infoValue {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.cardRight {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardRight button {
+  padding: 12px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cardRight button:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.clickable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+}
+
+.clickable:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.progressSection {
+  position: relative;
+  margin-top: 30px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.progressSection::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #6ea8ff, #8ef6d1);
+  opacity: 0.7;
+}
+
+.progressSection:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progressTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.progressTop h3 {
+  font-size: 1.2rem;
+}
+
+.progressValue {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.progressBarOuter {
+  width: 100%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressBarInner {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #6ea8ff, #8ef6d1);
+  transition: width 0.6s ease;
+  position: relative;
+}
+
+.progressBarInner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shine 2.5s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+.progressText {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #d8dee9;
+}
+
+.documentImage {
+  height: 40px;
+}
+
+.card:hover .cardLeft h3 {
+  color: #8ef6d1;
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.subheading {
+  color: #777;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.statusBadge {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.statusDraft {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+}
+
+.statusSubmitted {
+  background-color: rgba(0, 200, 120, 0.15);
+  color: #00c878;
+  border: 1px solid rgba(0, 200, 120, 0.4);
+}
+
+.submittedBox {
+  margin-top: 15px;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(0, 200, 120, 0.08);
+  border: 1px solid rgba(0, 200, 120, 0.2);
+}
+
+.submittedTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #00c878;
+  margin-bottom: 5px;
+}
+
+.submittedText {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.summaryCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.summaryTitle {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.summaryText {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.summaryActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.primaryButton {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primaryButton:hover {
+  background-color: #1d4ed8;
+}
+
+.secondaryButton {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  background: transparent;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.secondaryButton:hover {
+  border-color: white;
+  color: white;
+}
+
+.documentText {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.appointmentCard {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.appointmentHeader {
+  margin-bottom: 12px;
+}
+
+.appointmentHeader h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.appointmentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.appointmentItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.label {
+  font-size: 12px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.value {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+}

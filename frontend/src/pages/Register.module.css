@@ -1,0 +1,163 @@
+.registerPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f1a24 0%, #1b2733 50%, #243444 100%);
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.registerContainer {
+  width: 100%;
+  max-width: 1100px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.registerLeft {
+  position: relative;
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.registerLeft::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/emblem.svg") center/60% no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+/* .registerLeft > * {
+  position: relative;
+} */
+
+.registerLeft h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.registerLeft p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d7e3f4;
+}
+
+.registerRight {
+  background: white;
+  padding: 50px 40px;
+}
+
+.registerForm h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #0b1f3a;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.inputGroup label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1b2c45;
+}
+
+.inputGroup input {
+  padding: 14px 16px;
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.inputGroup input:focus {
+  border-color: #1e4e8c;
+  box-shadow: 0 0 0 3px rgba(30, 78, 140, 0.12);
+}
+
+.registerBtn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #0b1f3a;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.registerBtn:hover {
+  background: #15345f;
+}
+
+.loginText {
+  margin-top: 18px;
+  text-align: center;
+  color: #44556b;
+}
+
+.loginText span {
+  color: #0b1f3a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.errorMsg {
+  background: #ffe5e5;
+  color: #c62828;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.successMsg {
+  background: #e7f8ec;
+  color: #1b8a3d;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .registerContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .registerLeft {
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .registerRight {
+    padding: 35px 25px;
+  }
+
+  .registerLeft h1 {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,205 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(7, 24, 48, 0.95),
+      rgba(10, 40, 78, 0.9),
+      rgba(16, 61, 112, 0.88)
+    ),
+    url("../assets/hero1.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 15, 31, 0.28);
+  backdrop-filter: blur(3px);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1180px;
+}
+
+.loginWrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.leftPanel {
+  color: #ffffff;
+  padding: 20px 10px;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.heading {
+  margin: 0 0 16px;
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.subtext {
+  max-width: 560px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 28px;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 560px;
+}
+
+.infoCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  padding: 18px 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.infoCard h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.infoCard p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rightPanel {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.error {
+  margin: -2px 0 2px;
+  color: #c62828;
+  background: #fdecec;
+  border: 1px solid #f5c2c2;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.92rem;
+}
+
+.loginButton {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0d4f9a, #0b63c9);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 12px 24px rgba(11, 99, 201, 0.28);
+}
+
+.loginButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(11, 99, 201, 0.34);
+}
+
+.loginButton:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 980px) {
+  .loginWrapper {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .leftPanel {
+    padding: 0;
+  }
+
+  .heading {
+    font-size: 2.4rem;
+  }
+
+  .subtext {
+    max-width: 100%;
+  }
+
+  .infoGrid {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 24px 14px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subtext {
+    font-size: 0.98rem;
+  }
+
+  .infoCard {
+    padding: 16px;
+  }
+}
+
+.registerText {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.registerLink {
+  color: #0b63c9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.registerLink:hover {
+  text-decoration: underline;
+}

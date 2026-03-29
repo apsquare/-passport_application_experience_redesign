@@ -1,0 +1,394 @@
+.page {
+  min-height: 100vh;
+  padding: 40px 20px 60px;
+  background: linear-gradient(135deg, #0f1a24 0%, #1b2733 50%, #243444 100%);
+  color: white;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.topBar {
+  margin-bottom: 22px;
+}
+
+.heroCard {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.heroLeft,
+.heroRight,
+.formCard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.heroLeft {
+  padding: 34px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.title {
+  margin: 0;
+  font-size: 44px;
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 16px;
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.heroRight {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepBadge {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6ea8ff, #8ef6d1);
+  color: #0f1a24;
+  font-size: 18px;
+  font-weight: 800;
+  box-shadow: 0 10px 22px rgba(110, 168, 255, 0.2);
+}
+
+.stepText {
+  margin-top: 14px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.formCard {
+  position: relative;
+  padding: 28px;
+  overflow: hidden;
+}
+
+.formCard::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #6ea8ff, #8ef6d1);
+  opacity: 0.8;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.sectionHeader {
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 28px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+}
+
+.reviewGrid p {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.55;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.documentsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.documentCard {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.documentLabel {
+  margin: 0 0 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+
+.documentImage {
+  width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 8px;
+}
+
+.fileBox {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.fileIcon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.fileName {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  word-break: break-word;
+}
+
+.fileMeta {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.missingDoc {
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+
+.confirmBox {
+  margin-top: 12px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.checkboxRow input {
+  margin-top: 4px;
+  accent-color: #8ef6d1;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton,
+.ghostButton {
+  border: none;
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primaryButton {
+  background: linear-gradient(90deg, #6ea8ff, #8ef6d1);
+  color: #0f1a24;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(110, 168, 255, 0.24);
+}
+
+.primaryButton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.secondaryButton,
+.ghostButton {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.secondaryButton:hover,
+.ghostButton:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+@media (max-width: 960px) {
+  .heroCard {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .reviewGrid,
+  .documentsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .fullWidth {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 24px 14px 40px;
+  }
+
+  .heroLeft,
+  .heroRight,
+  .formCard {
+    border-radius: 18px;
+  }
+
+  .heroLeft {
+    padding: 26px 20px;
+  }
+
+  .heroRight {
+    padding: 18px;
+  }
+
+  .formCard {
+    padding: 22px 18px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton,
+  .ghostButton {
+    width: 100%;
+  }
+}
+
+@media print {
+  .page {
+    background: white;
+    color: black;
+    padding: 0;
+  }
+
+  .topBar,
+  .actions,
+  .confirmBox,
+  .heroRight {
+    display: none !important;
+  }
+
+  .heroCard,
+  .formCard {
+    background: white;
+    color: black;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .reviewGrid p,
+  .documentCard,
+  .fileBox,
+  .missingDoc {
+    background: white;
+    color: black;
+    border: 1px solid #ddd;
+  }
+
+  .documentLabel,
+  .title,
+  .subtitle,
+  .eyebrow,
+  .sectionTitle,
+  .fileName,
+  .fileMeta {
+    color: black !important;
+  }
+}
+
+.emptyText {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
