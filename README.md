@@ -6,6 +6,8 @@ PassportSeva is a modern, user-friendly web application designed to simplify and
 
 The application focuses on reducing complexity, improving clarity, and enhancing user experience, especially for first-time applicants.
 
+-[Step-by-Step Application Walkthrough](https://drive.google.com/drive/folders/1UyP3cmJ75V6VttvK6WlKsST18IOOLeKT?usp=sharing)
+
 ---
 
 ## Objectives
